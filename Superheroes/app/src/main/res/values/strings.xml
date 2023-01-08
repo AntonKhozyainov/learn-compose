@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Superheroes</string>
+    <string name="hero1">Spider-man</string>
+    <string name="description1">Летает на паутина крутой</string>
+
+    <string name="hero2">Бэтмен</string>
+    <string name="description2">Злой никого не убивает</string>
+
+    <string name="hero3">Женщина кот</string>
+    <string name="description3">Лижетasdf sadвапвапвапвапвапппппппвап вапвап вап вап вап вап вап вап f sadf sadf sadf fasd fasd fsad яйца</string>
+
+    <string name="hero4">Зеленый гоблин</string>
+    <string name="description4">Нюхает клейsdf sadf sdf и летает</string>
+
+    <string name="hero5">Пипец</string>
+    <string name="description5">Смешной</string>
+
+    <string name="hero6">Какойто супер герой</string>
+    <string name="description6">Героический bbbbbbbbbbbbbb sdfsdfsdf         sdfsdfs</string>
+
+</resources>

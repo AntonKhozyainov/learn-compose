@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Business card</string>
+    <string name="my_name">Anton Khozyainov</string>
+    <string name="content_description_android">Android</string>
+    <string name="phone">+7(919)745–33-93</string>
+    <string name="cont">\@KhozyainovAnton</string>
+    <string name="mail">alk3223232@yandex.ru</string>
+    <string name="major">Android Developer Extraordinaire</string>
+</resources>

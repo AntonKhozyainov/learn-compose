@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Art space</string>
+
+    <string name="image">Image</string>
+
+    <string name="dice_author">Ivan Ivanov (2020)</string>
+    <string name="dice_title">Wonderful dice</string>
+
+    <string name="lemon_author">Petr Petrov (2023)</string>
+    <string name="lemon_title">Juice lemon</string>
+
+    <string name="logo_author">Inakentyi Spichka (2022)</string>
+    <string name="logo_title">Android Logo</string>
+
+    <string name="previous">Previous</string>
+    <string name="next">Next</string>
+</resources>
