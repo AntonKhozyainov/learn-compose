@@ -37,22 +37,11 @@ fun ReplyApp(
     val replyUiState = viewModel.uiState.collectAsState().value
 
     //Установим тип навигации в зависимости от размера экрана устройства
-    val navigationType = when (windowSize) {
-        WindowWidthSizeClass.Compact -> {
-            ReplyNavigationType.BOTTOM_NAVIGATION
-        }
-        WindowWidthSizeClass.Medium -> {
-            ReplyNavigationType.NAVIGATION_RAIL
-        }
-        WindowWidthSizeClass.Expanded -> {
-            ReplyNavigationType.PERMANENT_NAVIGATION_DRAWER
-        }
-        else -> {
-            ReplyNavigationType.BOTTOM_NAVIGATION
-        }
-    }
+    val navigationType = getNavigationType(windowSize)
+    val contentType = getReplyContentType(windowSize)
 
     ReplyHomeScreen(
+        contentType = contentType,
         navigationType = navigationType,
         replyUiState = replyUiState,
         onTabPressed = { mailboxType: MailboxType ->
@@ -70,3 +59,29 @@ fun ReplyApp(
         modifier = modifier
     )
 }
+
+private fun getNavigationType(windowSize: WindowWidthSizeClass): ReplyNavigationType =
+    when (windowSize) {
+        WindowWidthSizeClass.Compact -> {
+            ReplyNavigationType.BOTTOM_NAVIGATION
+        }
+        WindowWidthSizeClass.Medium -> {
+            ReplyNavigationType.NAVIGATION_RAIL
+        }
+        WindowWidthSizeClass.Expanded -> {
+            ReplyNavigationType.PERMANENT_NAVIGATION_DRAWER
+        }
+        else -> {
+            ReplyNavigationType.BOTTOM_NAVIGATION
+        }
+    }
+
+private fun getReplyContentType(windowSize: WindowWidthSizeClass): ReplyContentType =
+    when (windowSize) {
+        WindowWidthSizeClass.Expanded -> {
+            ReplyContentType.LIST_AND_DETAIL
+        }
+        else -> {
+            ReplyContentType.LIST_ONLY
+        }
+    }
